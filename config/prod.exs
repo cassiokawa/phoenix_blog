@@ -14,7 +14,7 @@ use Mix.Config
 config :blog, Blog.Endpoint,
   # http: [port: {:system, "PORT"}],
   load_from_system_env: true,
-  url: [host: "example.com", port: 80],
+  # url: [host: "example.com", port: 80],
   url: [scheme: "https", host: "gentle-brushlands-98099.herokuapp.com", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/manifest.json",
